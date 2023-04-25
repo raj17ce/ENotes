@@ -1,0 +1,39 @@
+.about-container {
+	margin: 10rem auto;
+	text-align: left;
+	line-height: 1.5;
+	padding: 1em;
+}
+
+.about-container h2 {
+	padding: 0 1em 1em;
+	font-size: 2rem;
+	width: max-content;
+	margin-inline: auto;
+}
+
+.about-container p {
+	padding: 0.2em;
+	font-size: 1.1rem;
+	width: 70%;
+	margin-inline: auto;
+	margin-block: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.about-container {
+		margin: 7rem auto;
+	}
+	.about-container p {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.about-container {
+		padding: 0;
+	}
+	.about-container p {
+		width: 100%;
+	}
+}

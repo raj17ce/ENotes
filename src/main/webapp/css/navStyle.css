@@ -1,0 +1,104 @@
+/* NavBar*/
+
+nav {
+    background: var(--bg-primary);
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    transition: 0.4s ease-in-out;
+    width: 100%;
+}
+
+.window-scroll {
+    background: var(--bg-secondary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+    justify-content: space-between;
+    padding-inline: 1.2em;
+    padding-block: 0.7em;
+}
+
+.brand-logo {
+    font-weight: 700;
+    font-size: 1.7rem;
+	color: var(--text-blue);
+}
+
+.uil-clipboard-notes {
+	color: var(--text-white);
+	font-weight: 400;
+	padding-right: 0.5rem;
+}
+
+.nav-list li {
+    padding: 0.5em;
+	font-weight: 600;
+	font-size: 1.1rem;
+	transition: var(--transition);
+}
+
+.nav-list li:hover {
+	color: var(--text-blue);
+	cursor: pointer;
+}
+
+.nav-list li a {
+	transition: var(--transition);
+}
+
+.nav-list li a:hover {
+	color: var(--text-blue);
+	cursor: pointer;
+}
+
+.nav-list p {
+	font-size: 2rem;
+}
+
+.nav-container button {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+
+	.nav-container button {
+        display: inline-block;
+        background: transparent;
+		border: 0;
+        font-size: 1.8rem;
+        color: var(--text-white);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+	.nav-list {
+        position: fixed;
+        padding: 1.5rem 0;
+        top: -26rem;
+        left: 0;
+        width: 100vw;
+        flex-direction: column;
+        background: var(--bg-secondary);
+        transition: 0.7s ease;
+        z-index: -5;
+    }
+
+	.nav-list a {
+        display: inline-block;
+    }
+
+	.nav-list.active {
+        top: 3.5rem;
+    }
+
+	.nav-list p {
+		display: none;
+	}
+
+	nav.active {
+        transition: 0.4s ease-in-out;
+        background: var(--bg-secondary);
+    }
+}

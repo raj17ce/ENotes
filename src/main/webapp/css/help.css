@@ -1,0 +1,40 @@
+.help-container {
+	margin: 10rem auto;
+}
+
+.component {
+	width: 50%;
+	margin-inline: auto;
+	text-align: center;
+	padding: 1em;
+	line-height: 1.5;
+	margin-block: 3rem;
+	border: 3px solid;
+	border-color: var(--text-blue);
+	border-radius: 1.25rem;
+}
+
+.component h2 {
+	padding: 0 1em 1em;
+	font-size: 1.8rem;
+}
+
+.component p {
+	padding: 0.2em;
+	font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.help-container {
+		margin: 7rem auto;
+	}
+	.component {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.component {
+		width: 100%;
+	}
+}
