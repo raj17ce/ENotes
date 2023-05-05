@@ -59,7 +59,6 @@ img {
 	
 	@media screen and (max-width: 600px) {
 		width: 94%;
-		background: blue;
 	}
 	
 	@media screen and (min-width: 601px) and (max-width: 1024px) {

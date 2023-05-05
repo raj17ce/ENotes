@@ -21,13 +21,35 @@
 	margin-inline: auto;
 }
 
-.form-name {
-	display: flex;
-	gap: 1.2rem;
+.successtext {
+	border: 2px solid var(--text-blue);
+	background: #03C03C;
+	color: #000000;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.failtext {
+	border: 2px solid var(--text-blue);
+	background: #B31B1B;
+	color: #FFFFFF;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.successtext a {
+	color: #000000!important;
+}
+.successtext a:hover {
+	color: #FFFFFF!important;
 }
 
 .signup-form input[type="text"] {
-	width: 50%;
+	width: 100%;
 }
 
 .signup-form input, textarea {

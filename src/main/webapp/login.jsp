@@ -18,10 +18,22 @@
 		
 		<h2 class="signup-title">Login</h2>
 		
-		<form action="https://formspree.io/f/xvonkjkd" method="post"
+		<form action="./loginServlet" method="post"
 			class="login-form">
-			<input type="email" name="email" placeholder="Email Address"
-				required> <input type="password" name="password"
+			
+			<%
+				String failMsg = (String) session.getAttribute("loginFail");
+			
+				if(failMsg != null) {
+			%>
+			<div class="failtext"><%=failMsg%></div>
+			<%
+				session.removeAttribute("loginFail");
+				}
+			%>
+			
+			<input type="email" name="uemail" placeholder="Email Address"
+				required> <input type="password" name="upassword"
 				placeholder="Password" required>
 			<button type="submit" class="btn">Login</button>
 		</form>

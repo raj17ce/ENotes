@@ -21,6 +21,15 @@
 	margin-inline: auto;
 }
 
+.failtext {
+	border: 2px solid var(--text-blue);
+	background: #B31B1B;
+	color: #FFFFFF;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
 
 .login-form input, textarea {
 	width: 100%;
