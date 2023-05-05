@@ -1,0 +1,66 @@
+.notes-container {
+	padding: 1em;
+	margin: 7rem auto;
+}
+
+.notes-container h2 {
+	text-align: center;
+	font-size: 2rem;
+	margin: 0 0 3rem;
+}
+
+.notes-form {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-inline: auto;
+	width: 80%;
+}
+
+.notes-form input[type="text"], textarea {
+	width: 100%;
+	padding: 1rem;
+	border: 2px solid;
+	border-color: var(--text-blue);
+	border-radius: 0.5rem;
+	background: var(--bg-secondary);
+	color: var(--color-white);
+	border-radius: 0.5rem;
+}
+
+.notes-form label {
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+.notes-form input[type="submit"] {
+	width: cover-content;
+}
+
+.notes-form .btn {
+	width: max-content;
+	cursor: pointer;
+	margin-top: 1rem;
+	margin-inline: auto;
+	padding: 0.5em 2em;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.notes-container {
+		margin: 5rem auto 4rem;
+	}
+	.notes-form {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.notes-container {
+		margin: 5rem auto 3rem;
+	}
+	.notes-form {
+		width: 100%;
+	}
+}

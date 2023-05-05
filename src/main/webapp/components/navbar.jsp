@@ -51,6 +51,10 @@
 
 					<table class="table">
 						<tr>
+							<th>User ID</th>
+							<td><%=user.getUserID()%></td>
+						</tr>
+						<tr>
 							<th>Full Name</th>
 							<td><%=user.getName()%></td>
 						</tr>

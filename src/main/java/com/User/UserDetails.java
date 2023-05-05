@@ -1,6 +1,7 @@
 package com.User;
 
 public class UserDetails {
+	private int userID;
 	private String name;
 	private String email;
 	private String password;
@@ -9,11 +10,19 @@ public class UserDetails {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	public UserDetails(String name, String email, String password) {
 		super();
 		this.name = name;
 		this.email = email;
 		this.password = password;
+	}
+	
+	public int getUserID() {
+		return userID;
+	}
+	public void setUserID(int userID) {
+		this.userID = userID;
 	}
 	public String getName() {
 		return name;
