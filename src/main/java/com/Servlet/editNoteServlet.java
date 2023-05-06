@@ -13,33 +13,36 @@ import com.DB.DBConnect;
 import com.User.NoteDetails;
 import com.User.UserDetails;
 
-@WebServlet("/addNotesServlet")
-public class addNotesServlet extends HttpServlet {
+@WebServlet("/editNoteServlet")
+public class editNoteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		int noteID = Integer.parseInt(request.getParameter("nid"));
 		String title = request.getParameter("ntitle");
 		String content = request.getParameter("ncontent");
-		
-		HttpSession session = request.getSession();
-		UserDetails ud = (UserDetails) session.getAttribute("userDe");
+		UserDetails ud = (UserDetails) request.getSession().getAttribute("userDe");
 		
 		NoteDetails nd = new NoteDetails();
+		nd.setNoteID(noteID);
 		nd.setTitle(title);
 		nd.setContent(content);
 		nd.setUser(ud);
 		
 		NoteDAO dao = new NoteDAO(DBConnect.getCon());
-		boolean f = dao.addNote(nd);
 		
-		if(f == true) {
-			System.out.println("Note Added Successfully...");
+		boolean isEdited = dao.editNote(nd);
+		
+		if(isEdited) {
+			System.out.println("Note Edited Successfully");
+			HttpSession session = request.getSession();
+			session.setAttribute("editMsg", "Note Edited Successfully...");
+			
 			response.sendRedirect("./showNotes.jsp");
 		}
 		else {
-			System.out.println("Note Adding Failed...");
-			response.sendRedirect("./addNotes.jsp");
+			System.out.println("Note Edited Failed");
 		}
 	}
 

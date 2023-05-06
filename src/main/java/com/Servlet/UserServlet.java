@@ -29,11 +29,11 @@ public class UserServlet extends HttpServlet{
 		boolean f = dao.addUser(ud);
 		
 		if(f == true) {
-			session.setAttribute("signupSuccess", "Signed Up Successfully.");
+			session.setAttribute("signupSuccess", "Signed Up Successfully...");
 			response.sendRedirect("./signup.jsp");
 		}
 		else {
-			session.setAttribute("signupFail", "There was some error at Server Side.");
+			session.setAttribute("signupFail", "There was some error at Server Side...");
 			response.sendRedirect("./signup.jsp");
 		}
 	}

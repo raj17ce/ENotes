@@ -1,0 +1,100 @@
+.show-container {
+	margin-block: 7rem;
+}
+
+.show-container .all-notes {
+	text-align: center;
+	margin-bottom: 3rem;
+	
+}
+
+.successtext {
+	border: 2px solid var(--text-blue);
+	background: #03C03C;
+	color: #000000;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-weight: 600;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.card {
+	margin: 3rem auto;
+	border: 3px solid var(--text-blue);
+	padding: 1em 3em;
+	border-radius: 0.5rem;
+}
+
+.card img {
+	max-width: 100px;
+	margin-inline: auto;
+}
+
+.card-body h3, .card-body p{
+	margin-block: 1.5rem;
+}
+
+.publish-text {
+	color: #18e046;
+}
+
+.button-container {
+	text-align: center;
+}
+
+.button-container .btn {
+	font-weight: 700;
+	margin: 0.3rem;
+	padding: 0.5em 1em;
+}
+
+.delete-btn {
+	background: #d11a2a;
+	color: #ffffff;
+}
+
+.delete-btn:hover {
+	border-color: #d11a2a;
+	color: #d11a2a;
+}
+
+.edit-btn {
+	background: #18e046;
+	color: #ffffff;
+}
+
+.edit-btn:hover {
+	border-color: #18e046;
+	color: #18e046;
+}
+
+.add-notes-btn-container {
+	text-align: center;
+}
+
+.add-notes-btn {
+	margin-top: 3rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+	.show-container {
+		margin: 7rem auto;
+	}
+	.card {
+		width: 90%;
+		padding: 1em 2em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.show-container {
+		margin: 7rem auto;
+	}
+	.card {
+		width: 90%;
+		padding: 1em;
+	}
+}
