@@ -112,4 +112,26 @@ public class NoteDAO {
 		
 		return f;
 	}
+	
+	public boolean deleteNote(int noteID) {
+		boolean f = false;
+		
+		try {
+			String query = "delete from note where noteid=?";
+			PreparedStatement ps = con.prepareStatement(query);
+			
+			ps.setInt(1, noteID);
+			
+			int rowsAffected = ps.executeUpdate();
+			
+			if(rowsAffected == 1) {
+				f = true;
+			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return f;
+	}
 }

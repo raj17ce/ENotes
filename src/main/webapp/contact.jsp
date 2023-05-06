@@ -53,7 +53,7 @@
 				</ul>
 			</aside>
 
-			<form action="https://formspree.io/f/xvonkjkd" method="post"
+			<form action="https://formspree.io/f/mqkonnkk" method="post"
 				class="contact-form">
 				<div class="form-name">
 					<input type="text" name="firstName" placeholder="First Name"

@@ -40,6 +40,26 @@ if (ud == null) {
 			session.removeAttribute("editMsg");
 			}
 		%>
+		
+		<%
+			String deleteMsg = (String) session.getAttribute("deleteMsg");
+			if(deleteMsg != null) {
+		%>
+		<div class="successtext"><%=deleteMsg%></div>
+		<%
+			session.removeAttribute("deleteMsg");
+			}
+		%>
+		
+		<%
+			String notDeleteMsg = (String) session.getAttribute("notDeleteMsg");
+			if(notDeleteMsg != null) {
+		%>
+		<div class="failtext"><%=notDeleteMsg%></div>
+		<%
+			session.removeAttribute("notDeleteMsg");
+			}
+		%>
 
 		<%
 		if (ud != null) {
@@ -66,7 +86,7 @@ if (ud == null) {
 				</p>
 
 				<div class="button-container">
-					<a href="" class="btn delete-btn">Delete</a> <a
+					<a href="deleteServlet?note-id=<%=note.getNoteID()%>" class="btn delete-btn">Delete</a> <a
 						href="./editNote.jsp?note-id=<%=note.getNoteID()%>"
 						class="btn edit-btn">Edit</a>
 				</div>

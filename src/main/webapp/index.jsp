@@ -24,15 +24,15 @@
 	<div class="hero-section flex">
 		<div class="hero-card">
 			<h3><i class="uil uil-info-circle"></i>Free to use</h3>
-			<p>Our web app is free to use</p>
+			<p>Our app is free to use</p>
 		</div>
 		<div class="hero-card">
 			<h3><i class="uil uil-mobile-android"></i>Accessibility</h3>
 			<p>It can be used on any device.</p>
 		</div>
 		<div class="hero-card">
-			<h3><i class="uil uil-clipboard-notes"></i>MarkDown</h3>
-			<p>Our app supports MarkDown functionality.</p>
+			<h3><i class="uil uil-clipboard-notes"></i>Easy to use</h3>
+			<p>Our app has a user friendly UI.</p>
 		</div>
 	</div>
 </div>

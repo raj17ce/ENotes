@@ -18,13 +18,10 @@
 		<h2>About Us</h2>
 		<p>ENotes is an excellent online notes taking web application that
 			is easy to use and is available on all devices. It is a free service
-			that offers a range of features, including support for markdown
-			functionality.With ENotes, users can be sure that their notes are
-			securely stored and accessible from anywhere, at any time. The
-			application's support for markdown functionality is particularly
-			useful for users who want to create structured and visually appealing
-			notes. Overall, ENotes is a reliable and efficient tool for anyone
-			who wants to stay organized and productive.</p>
+			that offers a range of features.With ENotes, users can be sure that
+			their notes are securely stored and accessible from anywhere, at any
+			time. Overall, ENotes is a reliable and efficient tool for anyone who
+			wants to stay organized and productive.</p>
 		<p>ENotes offers editing and deleting note functionality, which
 			makes it a complete solution for note-taking. Users can easily edit
 			their notes by clicking on the note they want to modify, and then
