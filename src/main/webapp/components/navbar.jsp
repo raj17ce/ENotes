@@ -64,7 +64,7 @@
 						</tr>
 					</table>
 				</div>
-				<a href="" class="btn modal-logout">Log Out</a>
+				<a href="./logoutServlet" class="btn modal-logout">Log Out</a>
 			</div>
 
 			<button class="user-btn" id="user-btn-m">

@@ -13,25 +13,46 @@
 </head>
 <body>
 	<%@include file="./components/navbar.jsp"%>
-	
+
 	<div class="container login-container">
-		
+
 		<h2 class="signup-title">Login</h2>
-		
-		<form action="./loginServlet" method="post"
-			class="login-form">
-			
+
+		<form action="./loginServlet" method="post" class="login-form">
+
 			<%
-				String failMsg = (String) session.getAttribute("loginFail");
-			
-				if(failMsg != null) {
+			String failMsg = (String) session.getAttribute("loginFail");
+
+			if (failMsg != null) {
 			%>
 			<div class="failtext"><%=failMsg%></div>
 			<%
-				session.removeAttribute("loginFail");
-				}
+			session.removeAttribute("loginFail");
+			}
+			%>
+
+			<%
+			String loginMsg = (String) session.getAttribute("loginError");
+
+			if (loginMsg != null) {
+			%>
+			<div class="failtext"><%=loginMsg%></div>
+			<%
+			session.removeAttribute("loginError");
+			}
 			%>
 			
+			<%
+			String logoutMsg = (String) session.getAttribute("logoutMsg");
+
+			if (logoutMsg != null) {
+			%>
+			<div class="successtext"><%=logoutMsg%></div>
+			<%
+			session.removeAttribute("logoutMsg");
+			}
+			%>
+
 			<input type="email" name="uemail" placeholder="Email Address"
 				required> <input type="password" name="upassword"
 				placeholder="Password" required>

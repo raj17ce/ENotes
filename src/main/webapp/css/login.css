@@ -21,6 +21,16 @@
 	margin-inline: auto;
 }
 
+.successtext {
+	border: 2px solid var(--text-blue);
+	background: #03C03C;
+	color: #000000;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
 .failtext {
 	border: 2px solid var(--text-blue);
 	background: #B31B1B;
