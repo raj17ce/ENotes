@@ -31,13 +31,6 @@
 				internet</p>
 		</div>
 		<div class="component">
-			<h2>Can I use Markdown functionality?</h2>
-			<p>Yes, you can use markdown functionality. to learn more about
-				how to use Markdown, you can refer the below article.</p>
-			<a href="https://www.markdownguide.org/cheat-sheet/">Learn about
-				Markdown</a>
-		</div>
-		<div class="component">
 			<h2>What's the maximum length of a note?</h2>
 			<p>You can create very long notes if you absolutely have to, but
 				we don't recommend making notes longer than several thousand words.
